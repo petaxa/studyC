@@ -4,7 +4,7 @@
 #include <malloc.h>
 #include <memory.h>
 
-main{
+main(){
 	while(1){
                 char s[100];
                 char c = NULL;
