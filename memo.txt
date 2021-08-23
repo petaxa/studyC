@@ -1,0 +1,24 @@
+"\n"忘れが多すぎ。
+末尾には必ずつける。
+
+gccコンパイルオプションについて
+(https://qiita.com/seriru13/items/c2f5192615162c4c3f47)
+
+苦C
+(https://9cguide.appspot.com/index.html)
+
+.exeを一個下の階層においてコンパイルしようとするとMinGWが見つけられませんって出る。
+```C:/gcc/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file /compile/studyFunc.exe: No such file or directory
+collect2.exe: error: ld returned 1 exit status```
+
+ヘッダーファイルの役割と名前が一致していない。
+wikipedia(https://ja.wikipedia.org/wiki/%E6%A8%99%E6%BA%96C%E3%83%A9%E3%82%A4%E3%83%96%E3%83%A9%E3%83%AA#%E6%96%87%E5%AD%97%E5%88%97%E6%93%8D%E4%BD%9C_string.h)
+
+stdio.h:Standard Input/Output
+	標準入出力を扱う
+
+string.h:String
+	文字列操作を行う
+
+voidの理解
+(https://monozukuri-c.com/langc-funclist-void/)
