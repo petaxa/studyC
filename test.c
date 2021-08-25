@@ -171,5 +171,67 @@ main(){
 	
 
 	/*commit test*/
-    		return 0;
+
+	/*char s[20];
+	int i = 0;
+	FILE *fp;
+	fp = fopen("test.txt","r");
+	if(fp == NULL)
+		return 0;
+	while(1){
+		fgets(s,20,fp);
+		if(feof(fp))
+			break;
+		printf("%04d:%s",i,s);
+		i++;
+	}
+	fclose(fp);*/
+
+	/*FILE *fp;
+	int a = 100,b = 5,c = 40;
+	int x = 1,y = 10,z = 100;
+	char delm[] = "----====----\n";
+
+	fp = fopen("test.txt","w");
+	if(fp == NULL)
+		return 0;
+	fputs(delm,fp);
+	fprintf(fp,"%4d%4d%4d\n%4d%4d%4d\n",a,b,c,x,y,z);
+	fputs(delm,fp);
+	fclose(fp);*/
+	FILE *fp;
+	char filename[] = "bintest.dat";
+	int buf_w[10],buf_r[10];
+	int i;
+
+	/*
+	for(i=0;i<10;i++)
+		buf_w[i] = (i+1)*10;
+	if(!(fp = fopen(filename,"wb")))
+		return 0;
+	if(fwrite(buf_w,sizeof(int),10,fp) != 10){
+		fclose(fp);
+		return 0;
+	}
+	fclose(fp);
+
+	if(!(fp = fopen(filename,"rb")))
+		return 0;
+	if(fread(buf_r,sizeof(int),10,fp) != 10){
+		fclose(fp);
+		return 0;
+	}
+	fclose(fp);
+
+	for(i=0;i<10;i++)
+		printf("%d ",buf_r[i]);
+	*/
+
+	char s[30];
+	fgets(s,29,stdin);
+	fputs(s,stdout);
+	fputs("error\n",stderr);
+
+
+    	return 0;
 }

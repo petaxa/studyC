@@ -4,15 +4,15 @@
 #include <malloc.h>
 #include <memory.h>
 
-main(){
+int main(void){
 	while(1){
                 char s[100];
-                char c = NULL;
+                char c = 0;
                 int n = 0;
                 char *p = s;
                 printf("文字列を入力してください。\n");
                 rewind(stdin);
-                scanf("%[^\n]%*c",s);
+                gets(s);
 
                 printf("発見したい文字を入力してください。\n");
                 rewind(stdin);
